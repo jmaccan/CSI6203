@@ -9,8 +9,7 @@
             "request": "launch",
             "name": "Bash-Debug",
             "program": "${file}",
-            "terminalKind": "internal",
-            "timeout": "1000"
+            "terminalKind": "debugConsole"
 
         }
     ]
