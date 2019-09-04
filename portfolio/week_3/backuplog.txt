@@ -1,0 +1,20 @@
+
+OPTIONS MENU
+------------------
+1 - Create Folder
+2 - List Files
+3 - Copy Folder
+4 - Save Password
+5 - Read Password
+6 - Print Newest File
+------------------
+2 selected - List Files from folder
+backuplog.txt
+cases.sh
+countArgs.sh
+file0.txt
+file1.txt
+file2.txt
+folderCopier.sh
+readSec.sh
+secret.txt
