@@ -1,20 +1,17 @@
 #!/bin/bash
 
-# Author: J Maccan
-# Date: Auguest 2019
-# Version: NA
+#Author: J Maccan
+#Date: August 2019
+#Version: NA
 
-# Description: Create new folder by copy existing folder into new location.
-# Esnure folder to be copied exists
+# Description: Count num of args
 
-read -p "Folder to copy " folderName
-echo "Folder name is: $folderName"
-
-if [ -d "$folderName" ]; then
-    echo "Folder Exists"
+if [ -f $@ ]; then
+    echo "all args ARE files"
 else
-    echo "Folder does not exist"
+    echo "all args ARE NOT files"
 fi
+
 
 
 
