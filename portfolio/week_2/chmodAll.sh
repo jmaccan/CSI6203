@@ -9,6 +9,8 @@ echo "updating all permissions in SH files in weeks 1,2,3 folders"
 chmod +x ~/CSI6203/portfolio/week_1/*.sh
 chmod +x ~/CSI6203/portfolio/week_2/*.sh
 chmod +x ~/CSI6203/portfolio/week_3/*.sh
+chmod +x ~/CSI6203/portfolio/week_4/*.sh
+chmod +x ~/CSI6203/portfolio/week_5/*.sh
 cd ~/CSI6203/
 tree
 echo 'Done'

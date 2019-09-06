@@ -59,29 +59,25 @@ case $usrSel in
         echo "Unable to read file"
         fi;;
     "6") # Option 6 from Menu is selected - Execute following case
-        echo "6 selected - Print newest file (3 files as Args required)"
-        #if arg count doesnt equal 3, exit with error msg
-        if [ ! $# -eq 3 ]; then
-            echo "3 args not supplied"
-            exit 1
-        fi
+        echo "6 selected - Print newest file"
 
-        # check each arg that its of type file
-        for var in "$@"
-        do
-            if [ ! -f "$var" ]; then
-                echo "Not all args are files"
-                exit 1
-            fi
-        done
-        # tests for newest file
-        if [ $1 -nt $2 ] && [ $1 -nt $3 ]; then
-            echo "$1 is the newest file"
-        elif [ $2 -nt $1 ] && [ $2 -nt $3 ]; then
-            echo "$2 is the newest file"
-        elif [ $3 -nt $2 ] && [ $3 -nt $1 ]; then
-            echo "$3 is the newest file"
-        fi;
+        #Prompt for 3 file names
+        read -p 'Enter 1st file name: ' f1
+        read -p 'Enter 2nd file name: ' f2
+        read -p 'Enter 3rd file name: ' f3
+
+        if [ ! -f "$f1" ] || [ ! -f "$f2" ] || [ ! -f "$f3" ]; then
+            echo "Entered names are not all files"
+        else
+            # tests for newest file
+            if [ $f1 -nt $f2 ] && [ $f1 -nt $f3 ]; then
+                echo "$f1 is the newest file"
+            elif [ $f2 -nt $f1 ] && [ $f2 -nt $f3 ]; then
+                echo "$f2 is the newest file"
+            elif [ $f3 -nt $f2 ] && [ $f3 -nt $f1 ]; then
+                echo "$f3 is the newest file"
+            fi;
+        fi
 esac
 exit 0
         
