@@ -1,0 +1,18 @@
+        \n$usrInp was successfully downloaded\n
+    \nExiting...\n
+    \033[31mERROR:\033[0m $1
+start of script
+Thank you
+Thank you
+    \033[31mERROR:\033[0m $1
+            Correct!
+Welcome to the guessing game
+Goodbye
+    \033[31mERROR:\033[0m $VAR1
+The area for a triangle with a base: 5 and height: 5 is: $area
+        The area for a triangle with a base: $b and height: $h is: 
+        scale=2; $b*$h/2 | bc -q
+    \033[31mERROR:\033[0m $1
+Welcome to the guessing game
+Area of triangle is: $triArea
+Goodbye
